@@ -37,12 +37,12 @@ public class MonkeyTypewriter {
         thread4.start();
         thread5.start();
 
-        UnsafeCopier sc = new UnsafeCopier(introduction);
-        Thread thread6 = new Thread(uc);
-        Thread thread7 = new Thread(uc);
-        Thread thread8 = new Thread(uc);
-        Thread thread9 = new Thread(uc);
-        Thread thread10 = new Thread(uc);
+        SafeCopier sc = new SafeCopier(introduction);
+        Thread thread6 = new Thread(sc);
+        Thread thread7 = new Thread(sc);
+        Thread thread8 = new Thread(sc);
+        Thread thread9 = new Thread(sc);
+        Thread thread10 = new Thread(sc);
 
         thread6.start();
         thread7.start();
